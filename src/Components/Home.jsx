@@ -1,6 +1,12 @@
+import Nav from '../Routes/Routes';
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <h1>Home</h1>
+      <section>
+        <Nav />
+      </section>
+    </div>
   )
 }
 

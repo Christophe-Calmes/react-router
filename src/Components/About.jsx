@@ -1,6 +1,12 @@
+import BackToHome from "./BackToHome"
 const About = () => {
   return (
-    <div>About</div>
+    <div>
+      <h1>About</h1>
+      <section>
+        <BackToHome/>
+      </section>
+    </div>
   )
 }
 

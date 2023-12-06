@@ -1,6 +1,10 @@
+import BackToHome from "./BackToHome"
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>
+      <h1>Contact</h1>
+      <section><BackToHome/></section>
+    </div>
   )
 }
 
