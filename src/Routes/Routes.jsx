@@ -1,13 +1,15 @@
 import { Link, useNavigate } from "react-router-dom"
 const randId = Math.floor(Math.random()*10);
-//const randId = 1;
+const dataItem = [{id: 10, name: 'Bernard'}, 
+{id: 18, name: 'Bianca'},
+{id: 75, name: 'Belle'},]
 const Routes = () => {
     const navigate = useNavigate();
     const handleClick = (GoTo) => {
         navigate(GoTo);
       };
       const handleClickID = (GoTo, param) => {
-        const dataURL = { state: {id: param}};
+        const dataURL = { state: param};
         navigate(GoTo, dataURL);
       };
 
@@ -21,7 +23,13 @@ const Routes = () => {
         <ul>
             <li>useNavigate method</li>
             <li><button onClick={() => handleClick('/Home')}>Home</button></li>
-            <li><button onClick={() => handleClickID(`/ItemDetails/${randId}`, randId )}>Item details id {randId} </button></li>
+            {
+            dataItem.map((element)=>(
+                <li key={element}><button onClick={() => handleClickID(`/ItemDetails/${element.id}`, element )}>Item details for {element.name} </button></li>
+            ))
+            }
+           
+            
             <li><button onClick={() => handleClick('/Contact')}>Contact</button></li>
             <li><button onClick={() => handleClick('/About')}>About</button></li>
         </ul>

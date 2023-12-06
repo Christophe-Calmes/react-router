@@ -14,7 +14,14 @@ const ItemDetails = () => {
     <div>
       {security ? (
         <div>
+          <section>
           <h1>ItemDetails--- {id}</h1>
+          <article>
+            <p>Name of item : {location.state.name}</p>
+          </article>
+          </section>
+          
+
           <section>
             <article>
               <h2>Link Method</h2>
