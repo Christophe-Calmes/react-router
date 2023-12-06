@@ -4,7 +4,7 @@ const Routes = () => {
     <div>
         <ul>
             <li><Link to="/Home">Home</Link></li>
-            <li>Item Details</li>
+            <li><Link to="/ItemDetails">Item Details</Link></li>
             <li><Link to="/Contact">Contact</Link></li>
             <li><Link to="/About">About</Link></li>
         </ul>

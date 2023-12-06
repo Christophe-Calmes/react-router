@@ -1,6 +1,10 @@
+import BackToHome from "./BackToHome"
 const ItemDetails = () => {
   return (
-    <div>ItemDetails</div>
+    <div>
+      <h1>ItemDetails</h1>
+      <section><BackToHome/></section>
+    </div>
   )
 }
 

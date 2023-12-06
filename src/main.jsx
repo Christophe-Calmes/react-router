@@ -5,11 +5,11 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
-import Routes from './Routes/Routes';
 import ErrorPage from './Error_page'
 import Home from './Components/Home'
 import Contact from './Components/Contact';
 import About from './Components/About';
+import ItemDetails from './Components/ItemDetails'
 
 const router = createBrowserRouter([
   {
@@ -20,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/Home",
     element: <Home />,
+  },
+  {
+    path: "/ItemDetails",
+    element: <ItemDetails />,
   },
   {
     path: "/Contact",
